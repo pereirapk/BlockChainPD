@@ -1,0 +1,114 @@
+\documentclass[12pt]{article}
+
+\usepackage{sbc-template}
+
+\usepackage{graphicx,url}
+
+%\usepackage[brazil]{babel}   
+\usepackage[latin1]{inputenc}  
+
+     
+\sloppy
+
+\title{Lightning Network: Escalabidade de criptomoedas}
+
+\author{Erick Iwamoto\inst{1},Gabriel Pereira\inst{2}}
+
+
+\address{Universidade Tecn\'ologica Federal do Para\'a(UTFPR)\\
+  --Corn\'elio Proc\'opio-- PR -- Brasil
+\nextinstitute
+  Departamento de Computaç\~ao -- UTFPR\\
+  Durham, U.K.
+\nextinstitute
+  Departamento Computação -- UTFPR\\ 
+  \email{ggpereirasv@gmail.com, erick\_zen\_@hotmail.com}
+}
+
+\begin{document} 
+
+\maketitle
+
+\begin{abstract}
+  
+\end{abstract}
+     
+\begin{resumo} 
+  
+\end{resumo}
+
+
+\section{Intro{ç}\~ao}
+
+
+
+\section{Criptomoedas} \label{sec:firstpage}
+Criptomoeda \'e um tipo de moeda virtual descentralizada que usa criptografia para garantir a segurança das transaç\~oes que s\~ao feitas pela internet, sem a necessidade de taxas comumente cobradas por instituiç\~oes financeiras e banc\'arias. 
+A primeira moeda descentralizada implementada foi a bitcoin. Para a criaç\~ao do bitcoin, foi criada a tecnologia blockchain que \'e respons\'avel em assegurar a transaç\~ao da moeda. Graças ao blockchain, v\'arios outros tipos de moedas virtuais foram criadas, como a Ethereum, XRP, EOS, etc.
+\subsection{Blockchain}
+\paragraph{}
+O blockchain \'e uma rede peer-to-peer e um banco de dados distribu\'ido descentralizado que foi criado com o objetivo de acabar com o problema de gasto duplo. O problema de gasto duplo \'e quando a moeda digital \'e gasta duas ou mais vezes.
+O blockchain funciona da seguinte forma: \'e uma rede de blocos encadeados que carregam um conte\'udo (no caso do bitcoin \'e a transaç\~ao) junto com a impress\~ao digital. Quando um novo bloco \'e criado, ele vai conter a impress\~ao digital do anterior mais o seu próprio conte\'udo e com essas duas informaç\~oes ir\'a gerar sua pr\'opria impress\~ao digital.
+
+
+
+\begin{figure}[th]
+	\centering
+	\includegraphics[width=.9\textwidth]{blockchainex}
+	\caption{Transa{ç}\~ao de uma criptomoeda}
+	\label{fig:blockchainex}
+\end{figure}
+
+
+Graças a essas caracter\'isticas mostradas na figura 1, o blockchain vem sendo utilizado em v\'arias \'areas da segurança digital, pois ela impede a falsificaç\~ao e fraude.
+Para as transaç\~oes serem validadas, o blockchain utiliza os computadores da rede para checar as transaç\~oes e validando o bloco em um ?livro raz\~ao?, aonde fica guardado o hist\'orico de todas as transaç\~oes.
+Um dos grandes problemas que a blockchain vem apresentando \'e a escalabilidade. Como o n\'umero de usu\'arios e transaç\~oes vem crescendo, os blocos continuar\~ao a crescer e o sistema precisar\'a de mais tempo para validar as transaç\~oes.
+No começo o tempo de demora da transaç\~ao do bitcoin era de 10 minutos, s\'o que com o aumento da popularidade o tempo aumentou de 30 minutos, e em alguns casos at\'e 16 horas. O gr\'afico abaixo mostra a demora do tempo de confirmaç\~ao do bitcoin nos \'ultimos 180 dias.
+\subsection{Bitcoin}
+\paragraph{}
+A moeda bitcoin foi criada em 2009 por Satoshi Nakamoto, e utiliza a arquitetura peer-to-peer para fazer as transaç\~oes da moeda virtual. Ela foi a primeira moeda virtual a ser implementada.
+A ideia principal da moeda \'e utilizar uma rede peer-to-peer de dinheiro eletr\^onico, fazendo, assim, pagamentos online direto entre as partes interessadas sem passar por alguma instituiç\~ao financeira. Na transaç\~ao existe tr\^es elementos chave: quem envia, quem recebe e as assinaturas.
+
+\subsection{Ethereum}
+\paragraph{}
+A ethereum \'e uma altcoin (moeda alternativa ao bitcoin) que utiliza a tecnologia blockchain. Ela foi criada em 2014 por Vittalik Buterin, um programador Russo-canadense.
+A diferença da Ethereum para as outras criptomoedas \'e que no seu blockchain n\~ao guarda apenas valores e transaç\~oes, mas tamb\'em c\'odigos de programaç\~ao e instruç\~oes espec\'ificas.
+
+\section{Lightning Network}
+\paragraph{}
+O lightining network \'e uma solu{ç}\~ao para um problema que o bitcoin tem pois \'e gerado 10 bloco a cada 10 minutos(min) isso acaba deixando muitas transa{ç}\~oes em espera,até incio desse ano(2018) havia 112 mil transa{ç}\~oes esperando ser confirmadas para diminuir o n\'umero de transa{ç}\~oes na plataforma aumentaram as tarifas.
+A solu{ç}\~ao do lightning e criar uma conex\~ao entre os pares e depois o resultado seria mandado ao blockchain.Então acaba criando uma nova camada em cima do blockchain,deixando os pares fazendo suas transa{ç}\~oes e quando estiverem prontas s\~ao repassadas para o blockchain.
+Um dos problemas do lightning \'e processar grandes quantidades de dinheiro ele consegue trazer uma confiabilidade de 0.05 dol\'ares por transa{ç}ão como mostra na figura, isso no seu beta.Outro problema que esta enfrentando e conectar os pares poís os dois tem que estar on-line para q aconte{ç}a a transa{ç}\~ao
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{graphLN}
+	\caption{Confiabilidade por d\'olar}
+	\label{fig:graphln}
+\end{figure}
+
+
+\subsection{Segregated Witnesses}
+\paragraph{}
+O bitcoin tem um limete de bloco de 1mb que faz com que as transações fiquem
+limitadas 3-7 transações por segundo
+
+O Segregated Witnesses(SegWit) \'e uma forma da equipe do Bitcoin escalonar
+a plataforma sem perder rendimento e esse upgrade como como forma de soft fork.
+Na plataforma do bitcoin adotaram dois tipos de atualiza{ç}\~oes o soft fork,\'e uma 
+atualiza{ç}\~ao que não atrapalha o funcionamento geral da criptomoeda feito em 
+segundo plano,hard fork \'e uma atualiza{ç}~ao que acaba criando um nova maneira
+de estruturar a moeda, acaba sendo perigoso esse tipo de mudan{ç}a.
+O SegWit \'e uma solu{ç}\~ao para aumentar o numero de unidade que cabe em cada bloco,
+os blocos so com as assistaturas v\~ao ter em média 4mb.
+
+
+
+
+
+
+
+
+\bibliographystyle{sbc}
+\bibliography{sbc-template}
+
+\end{document}
