@@ -2,13 +2,11 @@ This is BibTeX, Version 0.99d (TeX Live 2019/dev/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: sbc-template.aux
 The style file: sbc.bst
+I found no \citation commands---while reading file sbc-template.aux
 Database file #1: sbc-template.bib
-Warning--I didn't find a database entry for "knuth:84"
-Warning--I didn't find a database entry for "boulic:91"
-Warning--I didn't find a database entry for "smith:99"
 You've used 0 entries,
             1935 wiz_defined-function locations,
-            473 strings with 3697 characters,
+            470 strings with 3672 characters,
 and the built_in function-call counts, 17 in all, are:
 = -- 0
 > -- 0
@@ -47,4 +45,4 @@ warning$ -- 0
 while$ -- 0
 width$ -- 0
 write$ -- 2
-(There were 3 warnings)
+(There was 1 error message)
