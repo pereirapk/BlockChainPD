@@ -17,11 +17,6 @@
 
 \address{Universidade Tecn\'ologica Federal do Para\'a(UTFPR)\\
   --Corn\'elio Proc\'opio-- PR -- Brasil
-\nextinstitute
-  Departamento de Computaç\~ao -- UTFPR\\
-  Durham, U.K.
-\nextinstitute
-  Departamento Computação -- UTFPR\\ 
   \email{ggpereirasv@gmail.com, erick\_zen\_@hotmail.com}
 }
 
@@ -34,11 +29,16 @@
 \end{abstract}
      
 \begin{resumo} 
+	Este trabalho tem como objetivo apresentar a tecnologia Lightning Network que \'e uma das soluç\~oes em implementaç\~ao para o problema de escalabilidade do Bitcoin. Al\'em disso \'e explicado como funciona uma blockchain para ent\~ao ser explicado a tecnologia Lightning. E, por fim, s\~ao mostrados alguns exemplos de poss\'iveis aplicaç\~oes que podem utilizar o Lightning Network em suas aplicaç\~oes.
+	
+	
   
 \end{resumo}
 
 
 \section{Intro{ç}\~ao}
+Em 2009, foi introduzido o conceito de moeda virtual por Satoshi Nakamoto, o Bitcoin. O Bitcoin foi criado com o objetivo de se fazer transaç\~oes financeiras sem intermedi\'arios. As transaç\~oes do Bitcoin funcionam com o a tecnologia blockchain, que \'e um banco de dados distribu\'ido descentralizado, que funciona como um livro raz\~ao e \'e o respons\'avel pela segurança das transaç\~oes (Nakamoto, 2008).
+Este projeto cont\'em o objetivo de apresentar como funciona as transaç\~oes do Bitcoin e mostrar um dos maiores problemas do Bitcoin hoje: a escalabilidade, assim como mostrar a tecnologia Lightning Network que \'e uma das soluç\~oes apresentadas a acabar com esse problema.
 
 
 
@@ -61,7 +61,7 @@ O blockchain funciona da seguinte forma: \'e uma rede de blocos encadeados que c
 
 
 Graças a essas caracter\'isticas mostradas na figura 1, o blockchain vem sendo utilizado em v\'arias \'areas da segurança digital, pois ela impede a falsificaç\~ao e fraude.
-Para as transaç\~oes serem validadas, o blockchain utiliza os computadores da rede para checar as transaç\~oes e validando o bloco em um ?livro raz\~ao?, aonde fica guardado o hist\'orico de todas as transaç\~oes.
+Para as transaç\~oes serem validadas, o blockchain utiliza os computadores da rede para checar as transaç\~oes e validando o bloco em um "livro raz\~ao", aonde fica guardado o hist\'orico de todas as transaç\~oes.
 Um dos grandes problemas que a blockchain vem apresentando \'e a escalabilidade. Como o n\'umero de usu\'arios e transaç\~oes vem crescendo, os blocos continuar\~ao a crescer e o sistema precisar\'a de mais tempo para validar as transaç\~oes.
 No começo o tempo de demora da transaç\~ao do bitcoin era de 10 minutos, s\'o que com o aumento da popularidade o tempo aumentou de 30 minutos, e em alguns casos at\'e 16 horas. O gr\'afico abaixo mostra a demora do tempo de confirmaç\~ao do bitcoin nos \'ultimos 180 dias.
 \subsection{Bitcoin}
@@ -78,7 +78,7 @@ A diferença da Ethereum para as outras criptomoedas \'e que no seu blockchain n\
 \paragraph{}
 O lightining network \'e uma solu{ç}\~ao para um problema que o bitcoin tem pois \'e gerado 10 bloco a cada 10 minutos(min) isso acaba deixando muitas transa{ç}\~oes em espera,até incio desse ano(2018) havia 112 mil transa{ç}\~oes esperando ser confirmadas para diminuir o n\'umero de transa{ç}\~oes na plataforma aumentaram as tarifas.
 A solu{ç}\~ao do lightning e criar uma conex\~ao entre os pares e depois o resultado seria mandado ao blockchain.Então acaba criando uma nova camada em cima do blockchain,deixando os pares fazendo suas transa{ç}\~oes e quando estiverem prontas s\~ao repassadas para o blockchain.
-Um dos problemas do lightning \'e processar grandes quantidades de dinheiro ele consegue trazer uma confiabilidade de 0.05 dol\'ares por transa{ç}ão como mostra na figura, isso no seu beta.Outro problema que esta enfrentando e conectar os pares poís os dois tem que estar on-line para q aconte{ç}a a transa{ç}\~ao
+Um dos problemas do lightning \'e processar grandes quantidades de dinheiro ele consegue trazer uma confiabilidade de 0.05 dol\'ares por transa{ç}ão como mostra na figura 2, isso no seu beta.Outro problema que esta enfrentando e conectar os pares poís os dois tem que estar on-line para q aconte{ç}a a transa{ç}\~ao
 \begin{figure}
 	\centering
 	\includegraphics[width=0.7\linewidth]{graphLN}
@@ -118,6 +118,28 @@ Carteira do Navegador: O pagamento de serviços na rede bitcoin funciona atrav\'e
 
 
 \bibliographystyle{sbc}
-\bibliography{sbc-template}
 
+\bibliography{sbc-template}
+ GUIA DO BITCOIN - O que a segwit <https://guiadobitcoin.com.br/o-que-e-a-segwit/>Acesso em 27 de setembro de 2018
+
+IVANCIC,Peter - Bitcoin Scalability Update: SegWit, Transaction Efficiency, and Lightning Network Implementation<https://cryptoslate.com/bitcoin-scalability-update-segwit-transaction-efficiency-and-lightning-network-implementation/>Acesso em 4 de novembro de 2018
+
+
+ROCHA, Luciano - Novos avanços na Lightning Network são divulgados<https://www.criptomoedasfacil.com/novos-avancos-na-lightning-network-sao-divulgados/> Acesso 4 de novembro de 2018
+
+
+ANCHETA, Andrew - What?s Holding Back The Lightning Network? <https://cryptobriefing.com/whats-holding-back-the-lightning-network/> Acesso em 4 de novembro de 2018
+
+
+COINTELEGRAPH, Lightning network News <https://cointelegraph.com/tags/lightning-network> Acesso em 4 de novembro de 2018
+
+ LEMOS, Rafael - Por Dentro do lightning network <https://cointimes.com.br/por-dentro-da-lightning-network/> Acesso 4 de Novembro de 2018
+
+
+GUIA DO BITCOIN - Como o lightning network resolvera o problema de escalabilidade <https://guiadobitcoin.com.br/saiba-o-que-e-a-lightning-network-e-como-ela-resolvera-o-problema-de-escalabilidade-do-bitcoin/> Acesso em 27 de Setembro de 2018
+
+LIGHTNING LABS -  FAQ<https://lightning.engineering/index.html#faq>Acessadi 4 de Novembro de 2018. 
+
+
+GUIA DO BITCOIN - Protocolo Proof of Work https://guiadobitcoin.com.br/ibm-afirma-que-protocolo-proof-of-work-do-bitcoin-pode-ser-melhorado/ Acesso 27 de Setembro de 2018
 \end{document}
