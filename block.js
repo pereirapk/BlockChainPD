@@ -96,10 +96,10 @@ myblock.createTransaction(new Transaction('Address2', 'Address1', 252));
 console.log('\n Strarting Transaction');
 myblock.minePendingTransactions('xaviers-address');
 
-console.log(getBalanceAddress('xaviers-address'));
+//console.log(getBalanceAddress('xaviers-address'));
 
 console.log('\n Strarting Transaction 2');
 myblock.minePendingTransactions('xaviers-address');
 
-console.log(getBalanceAddress('xaviers-address'));
+//console.log(getBalanceAddress('xaviers-address'));
 
